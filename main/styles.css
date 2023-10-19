@@ -119,7 +119,7 @@ ul {
 /* Video and image styling */
 video {
     width: 100%;
-    max-width: 600px;
+    max-width: 1920px;
     height: auto;
 }
 
@@ -150,6 +150,7 @@ textarea {
     height: 100px;
 }
 
+/* Buttons Styling*/
 button.dark-mode-button {
     padding: 10px 20px;
     background-color: #000;
@@ -226,4 +227,19 @@ button.submit-button:hover {
         order: 7;
         padding: 10px; /* Consider changing to a fixed padding instead of a percentage */
     }
+}
+
+.video-container {
+
+    width: 100%;
+    padding-bottom: 40%; /* Esto proporciona un aspect ratio de 16:9 */
+    position: relative;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
